@@ -8,10 +8,10 @@ import path from 'path';
 import ReactEngine from 'react-engine';
 import env from 'node-env-file';
 
-env('./.env');
-
 const app = express();
 const http = require('http').Server(app);
+
+env('./.env');
 
 const port = process.env.PORT || 9000;
 
@@ -34,7 +34,7 @@ app.set('view engine', 'jsx');
 app.set('view', require('react-engine/lib/expressView'));
 
 //expose public folder as static assets
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static( path.join(__dirname, '/public' )));
 
 app.get('/', function(req, res) {
   res.render(req.url, {
