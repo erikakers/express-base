@@ -36,20 +36,7 @@ app.set('view', require('react-engine/lib/expressView'));
 //expose public folder as static assets
 app.use(express.static( path.join(__dirname, '/public' )));
 
-app.get('/', function(req, res) {
-  res.render(req.url, {
-    title: 'React Engine Express Sample App',
-    name: 'Jordan'
-  });
-});
-
-// 404 template
-app.use(function(req, res) {
-  res.render('404', {
-    title: 'React Engine Express Sample App',
-    url: req.url
-  });
-});
+require('./app/router.js')(app);
 
 http.listen(port, function() {
   console.log('listing on port:' + port);
