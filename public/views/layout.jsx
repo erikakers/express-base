@@ -9,11 +9,11 @@ export default class Layout extends React.Component {
         <head>
           <meta charSet='utf-8' />
           <title>
-            {this.props.title}
+            { this.props.title }
           </title>
         </head>
         <body>
-          {this.props.children}
+          { this.props.children }
         </body>
         <script src='/bundle.js'></script>
       </html>
