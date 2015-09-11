@@ -1,5 +1,3 @@
-'use strict';
-
 import Routes from './routes.jsx';
 import Client from 'react-engine/lib/client';
 
