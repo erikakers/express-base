@@ -1,7 +1,8 @@
-'use strict';
+'use strict'; // eslint-disable-line
 
 // make `.jsx` file requirable by node
-require('node-jsx').install();
+// TODO: Node-JSX is depreated need to move this to Babel when React Engine supports it.
+require('node-jsx').install({ harmony: true });
 
 import express from 'express';
 import path from 'path';
@@ -39,5 +40,5 @@ app.use(express.static( path.join(__dirname, '/public' )));
 require('./app/router.js')(app);
 
 http.listen(port, function() {
-  console.log('listing on port:' + port);
+  console.log('listing on port:' + port); // eslint-disable-line
 });
