@@ -1,4 +1,9 @@
 {
+  {
+    "plugins": [
+      "react"
+    ]
+  },
   "ecmaFeatures": {
     "modules": true,
     "arrowFunctions": true,
