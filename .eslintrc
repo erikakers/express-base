@@ -4,7 +4,8 @@
     "arrowFunctions": true,
     "classes": true,
     "blockBindings": true,
-    "templateStrings": true
+    "templateStrings": true,
+    "jsx": true
   },
   "rules": {
     "indent": [
@@ -72,8 +73,7 @@
     "es6": true,
     "node": true,
     "browser": true,
-    "commonjs": true,
-    "jsx": true
+    "commonjs": true
   },
   "extends": "eslint:recommended"
 }
