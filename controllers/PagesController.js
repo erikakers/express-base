@@ -1,6 +1,6 @@
 'use strict';
 
-export default class PagesController {
+class PagesController {
 
   static index(req, res) {
     res.render(req.url, {
@@ -16,3 +16,5 @@ export default class PagesController {
     });
   }
 }
+
+module.exports = PagesController;
