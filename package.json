@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon ./node_modules/.bin/babel-node app.js",
     "start": "./node_modules/.bin/babel-node app.js",
-    "eslint": "eslint app/* controllers/* public/* app.js",
-    "test": "eslint"
+    "test": "eslint app/* controllers/* public/* app.js"
   },
   "repository": {
     "type": "git",
