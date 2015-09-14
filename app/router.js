@@ -1,7 +1,5 @@
 const PagesController = require('../controllers/PagesController');
 
-console.log(PagesController);
-
 module.exports = function(app) {
   app.get('/', PagesController.index);
   app.get('/about', PagesController.about);
