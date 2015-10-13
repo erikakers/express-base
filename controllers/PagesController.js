@@ -4,7 +4,7 @@ export default class PagesController {
     static home(req, res) {
         res.render(req.url, {
             title: 'React Engine Express Sample App Controller',
-            name: 'Jordan'
+            name: 'Erik'
         });
     }
 
