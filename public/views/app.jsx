@@ -1,14 +1,14 @@
 import React from 'react';
 import Router from 'react-router';
 
-import Layout from './layout.jsx';
+import Master from './master.jsx';
 
 export default class App extends React.Component {
-  render() {
-    return (
-      <Layout {...this.props}>
-        <Router.RouteHandler {...this.props}/>
-      </Layout>
-    );
-  }
+    render() {
+        return (
+            <Master {...this.props}>
+                <Router.RouteHandler {...this.props}/>
+            </Master>
+        );
+    }
 }
