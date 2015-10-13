@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A starting point for Express Apps with JSX",
   "main": "app.js",
+  "babel": {
+    "stage": 1
+  },
   "eslintConfig": {
     "extends": [
       "vml/base",
