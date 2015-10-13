@@ -23,7 +23,7 @@ app.set('view engine', 'jsx');
 app.set('view', require('react-engine/lib/expressView'));
 app.use(express.static( path.join(__dirname, '/public' )));
 
-require('./app/router.js')(app);
+require('./app/routes.js')(app);
 
 http.listen(port, () => {
     console.log('listing on port:' + port);
