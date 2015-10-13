@@ -1,3 +1,5 @@
+/* eslint new-cap: [2, {"capIsNewExceptions": ["Server"]}] */
+
 require('babel/register');
 
 import express from 'express';
@@ -5,13 +7,11 @@ import path from 'path';
 import ReactEngine from 'react-engine';
 import env from 'node-env-file';
 
-const app = express();
-const http = require('http').Server(app);
-
 env('./.env');
 
+const app = express();
+const http = require('http').Server(app);
 const port = process.env.PORT || 9000;
-
 const engine = ReactEngine.server.create({
     routes: require(path.join(__dirname, '/public/routes.jsx')),
     routesFilePath: path.join(__dirname, '/public/routes.jsx')
