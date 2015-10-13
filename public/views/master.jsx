@@ -1,19 +1,17 @@
 import React from 'react';
 
+import Head from './partials/head.jsx';
+import Footer from './partials/footer.jsx';
+
 export default class Master extends React.Component {
     render() {
         return (
             <html>
-                <head>
-                    <meta charSet='utf-8'/>
-                    <title>
-                        { this.props.title }
-                    </title>
-                </head>
+                <Head {...this.props} />
                 <body>
                     { this.props.children }
                 </body>
-                <script src='/bundle.js'></script>
+                <Footer {...this.props} />
             </html>
         );
     }
