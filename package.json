@@ -4,12 +4,11 @@
   "description": "A starting point for Express Apps with JSX",
   "main": "app.js",
   "eslintConfig": {
-    "env": {
-      "es6": true,
-      "node": true,
-      "browser": true,
-      "commonjs": true
-    }
+    "extends": [
+      "vml/base",
+      "vml/node",
+      "vml/react"
+    ]
   },
   "scripts": {
     "dev": "nodemon --watch app --watch controllers --watch public ./node_modules/.bin/babel-node app.js",
@@ -43,7 +42,7 @@
   },
   "devDependencies": {
     "eslint": "^1.4.0",
-    "eslint-plugin-react": "^3.3.2",
+    "eslint-config-vml": "^0.1.7",
     "nodemon": "^1.4.1"
   }
 }
