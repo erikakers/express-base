@@ -3,7 +3,6 @@ import React from 'react';
 import Master from './master.jsx';
 
 export default class NotFound extends React.Component {
-
     render() {
         return (
             <Master {...this.props}>
