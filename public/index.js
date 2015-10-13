@@ -3,15 +3,15 @@ import Client from 'react-engine/lib/client';
 
 // boot options
 const options = {
-  routes: Routes,
+    routes: Routes,
 
-  // supply a function that can be called
-  // to resolve the file that was rendered.
-  viewResolver: function(viewName) {
-    return require('./views/' + viewName);
-  }
+    // supply a function that can be called
+    // to resolve the file that was rendered.
+    viewResolver: (viewName) => {
+        return require('./views/' + viewName);
+    }
 };
 
 document.addEventListener('DOMContentLoaded', function onLoad() {
-  Client.boot(options);
+    Client.boot(options);
 });
